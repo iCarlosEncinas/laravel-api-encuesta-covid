@@ -22,9 +22,11 @@ use Illuminate\Support\Facades\Route;
 });*/
 use App\Http\Controllers\Api\RespuestasController;
 use App\Http\Controllers\Api\TiposUsuarioController;
+use App\Http\Controllers\Api\SintomasController;
 
 Route::post('/respuestas', [RespuestasController::class, 'store'])->name('api.respuestas.store');
 Route::get('/tipousuario', [TiposUsuarioController::class, 'index'])->name('api.tiposusuario.index');
+Route::get('/sintomas', [SintomasController::class, 'index'])->name('api.sintomas.index');
 
 
 //Route::get('/tipousuario', 'Api\TiposUsuarioController@index')->name('api.tiposusuario.index')
